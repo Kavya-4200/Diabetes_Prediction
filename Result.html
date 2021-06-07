@@ -1,0 +1,77 @@
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+body
+{
+	background-color: lightblue;
+}
+
+.content
+{
+	color: white;
+	text-align:center;
+	margin-top: 20%;
+}
+.nav
+{
+    background-color: orange;
+}
+
+.navbar
+{
+    display: inline;
+    background-color: orange;
+}
+
+#signout
+{
+    float: right;
+}
+
+.navi
+{
+    background-color: orange;
+    color: white;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+    display: inline-block;
+	padding-top: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+	font-size: 20px;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<!--
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+-->
+<div class="nav">
+    <br/>
+<form class="navbar" action="/">
+	<input type="submit" class="navi" value="Home">
+</form>
+<form class="navbar" action="/About">
+	<input type="submit" class="navi" value="About">
+</form>
+<form class="navbar" id="signout" action="/">
+	<input type="submit" class="navi" value="SignOut">
+</form>
+</div>
+
+<div class="content">
+	<h2></h2>
+	<h2>The prediction to your chances for Diabetes is {{value}}%   .</h2>
+</div>
+</body>
+</html>

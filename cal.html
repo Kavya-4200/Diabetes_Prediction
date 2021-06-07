@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <label for="Weight">Weight(in KG):&nbsp&nbsp&nbsp</label>
+        <input type="number" id="Weg" name="Weight" size="15px" pattern="\d" required/>
+<br/><br/>
+    <label for="Height">Height(in metres):&nbsp&nbsp&nbsp</label>
+        <input type="number" id="Heg" name="Height" size="15px" pattern="\d" required/>
+
+        <script>
+                var w=document.getElementById('Weg').value;
+                var h;
+                h = document.getElementsById('Heg').value;
+                var b=w/h;
+
+      alert("Your BMI is:",b);
+            </script>
+<br/><br/>
+</body>
+</html>

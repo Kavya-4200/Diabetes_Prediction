@@ -1,0 +1,114 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+body 
+{
+  background-color: lightblue;
+}
+
+h2
+{
+	color:white;
+    text-align: center;
+    font-size: 30px;
+}
+.content
+{
+	margin-left: 36%;
+	margin-right: 36%;
+	font-size: 30px;
+	color:white;
+}
+.submit
+{
+	background-color: grey;
+	color: white;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 15px;
+	font-size: 18px;
+	font-weight: bold;
+	align:center;
+}
+input
+{
+	height: 30px;
+}
+.nav
+{
+    background-color: orange;
+}
+
+.navbar
+{
+    display: inline;
+    background-color: orange;
+}
+
+#signout
+{
+    float: right;
+}
+
+.navi
+{
+    background-color: orange;
+    color: white;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+    display: inline-block;
+	padding-top: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+	font-size: 20px;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<!--
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+-->
+<div class="nav">
+    <br/>
+<form class="navbar" action="/">
+	<input type="submit" class="navi" value="Home">
+</form>
+<form class="navbar" action="/About">
+	<input type="submit" class="navi" value="About">
+</form>
+<form class="navbar" id="signout" action="/">
+	<input type="submit" class="navi" value="SignOut">
+</form>
+</div>
+<h2>Welcome New User</h2>
+
+<div class="content">
+<form action="/prediction">
+    <label for="Username">Username:&nbsp</label>
+    <input type="text" id="Username" name="Username" placeholder=" Enter your name.." pattern="[A-Z][a-zA-Z ]+" required>
+<br/><br/>
+	<label for="Username">E-mail ID:&nbsp</label>
+    <input type="e-mail" id="email" name="email" placeholder=" Enter your e-mail.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+<br/><br/>
+    <label for="password">Password:&nbsp&nbsp</label>
+    <input type="password" id="pw" name="password" placeholder=" Enter your password..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+<br/><br/>
+	<label for="mobile">Mobile No:</label>
+    <input type="text" id="mobile" name="mobile" placeholder=" Enter your mobile number.." pattern="\d{10}" required >
+<br/><br/>
+<center><input type="submit" value="Submit" class="submit"><center>
+</div>
+</body>
+</html>

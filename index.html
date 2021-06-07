@@ -1,0 +1,91 @@
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+body
+{
+	background-color: lightblue;
+}
+
+.heading
+{
+  color: white;
+  text-align: center;
+}
+
+.gallery
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+}
+
+input
+{
+	background-color: orange;
+	color: white;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	padding: 16px 32px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.nav
+{
+	background-color: orange;
+}
+.content
+{
+	text-align: center;
+}
+form
+{
+	display: inline;
+
+}
+.signout
+{
+	float: right;
+}
+</style>
+</head>
+
+<body>
+<!--
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>-->
+<div class="nav">
+<form action="/">
+	<input type="submit" value="Home">
+</form>
+<form action="/About">
+	<input type="submit" value="About">
+</form>
+<form class="signout" action="/">
+	<input type="submit" value="SignOut">
+</form>
+</div>
+<h1 class="heading">Diabetes Prediction using Data Mining</h1>
+<div class="gallery">
+	<img src="1.jpg" alt="" width="600" height="300" align="middle">
+</div>
+<br/>
+<div class="content">
+	<form action="/register">
+		<input type="submit" value="New User">
+	</form>
+	<form action="/login">
+		<input type="submit" value="Registered User">
+	</form>
+	<form action="/admin">
+		<input type="submit" value="Admin">
+	</form>
+</div>
+</body>
+</html>

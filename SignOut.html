@@ -1,0 +1,67 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+body {
+  background-color: lightblue;
+}
+h2{
+	color:white;
+}
+div{
+	text-align:center;
+	font-size:30px;
+	color:white;
+}
+
+ul
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+	overflow: hidden;
+	background-color: darkblue;
+	color:white;
+}
+
+li
+{
+	float: left;
+	font-weight: bold;
+}
+
+li a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover
+{
+	background-color: orange;
+}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="About.html">About</a></li>
+	<li style="float:right"><a class="active" href="index.html">Sign-Out</a></li>
+</ul>
+<div>
+<h2>Sign-out for User</h2>
+<form action="index.html" method="post">
+<input type="submit" value="Sign-out">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+body
+{
+	background-color: lightblue;
+	color: white;
+}
+.nav
+{
+    background-color: orange;
+}
+
+.navbar
+{
+    display: inline;
+    background-color: orange;
+}
+
+#signout
+{
+    float: right;
+}
+
+.navi
+{
+    background-color: orange;
+    color: white;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+    display: inline-block;
+	padding-top: 0px;
+	padding-bottom: 14px;
+	padding-left: 32px;
+	padding-right: 32px;
+	font-size: 20px;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<!--
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+-->
+<div class="nav">
+    <br/>
+<form class="navbar" action="/">
+	<input type="submit" class="navi" value="Home">
+</form>
+<form class="navbar" action="/About">
+	<input type="submit" class="navi" value="About">
+</form>
+<form class="navbar" id="signout" action="/">
+	<input type="submit" class="navi" value="SignOut">
+</form>
+</div>
+
+<h1 class="heading">Diabetes Prediction using Data Mining</h1>
+<div class="gallery">
+	<p>Details about prediction of diabetes using data mining.</p>
+</div>
+</body>
+</html>
